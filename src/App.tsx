@@ -7,6 +7,7 @@ import Inspection from './pages/Inspection'
 import Inventory from './pages/Inventory'
 import Analysis from './pages/Analysis'
 import Alert from './pages/Alert'
+import OperationLogs from './pages/Logs'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/inventory" element={<Inventory />} />
         <Route path="/analysis" element={<Analysis />} />
         <Route path="/alert" element={<Alert />} />
+        <Route path="/logs" element={<OperationLogs />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
     </MainLayout>

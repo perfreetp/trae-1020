@@ -9,7 +9,8 @@ import {
   AlertTriangle,
   ChevronLeft,
   ChevronRight,
-  Fish
+  Fish,
+  FileText
 } from 'lucide-react';
 import { useStore } from '../../store/useStore';
 
@@ -20,7 +21,8 @@ const menuItems = [
   { path: '/inspection', icon: ClipboardList, label: '巡检填报' },
   { path: '/inventory', icon: Package, label: '投入品管理' },
   { path: '/analysis', icon: BarChart3, label: '经营分析' },
-  { path: '/alert', icon: AlertTriangle, label: '预警处理' }
+  { path: '/alert', icon: AlertTriangle, label: '预警处理' },
+  { path: '/logs', icon: FileText, label: '操作日志' }
 ];
 
 export const Sidebar = () => {

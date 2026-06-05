@@ -213,3 +213,24 @@ export interface ThresholdConfig {
   ammoniaNitrogen: { min: number; max: number };
   nitrite: { min: number; max: number };
 }
+
+export interface OperationLog {
+  id: string;
+  type: 'device' | 'alert' | 'system' | 'inventory' | 'patrol';
+  action: string;
+  target: string;
+  operator: string;
+  timestamp: string;
+  details?: string;
+  pondId?: string;
+  pondName?: string;
+}
+
+export interface SearchResult {
+  type: 'pond' | 'device' | 'alert';
+  id: string;
+  title: string;
+  description: string;
+  pondId?: string;
+  pondName?: string;
+}
